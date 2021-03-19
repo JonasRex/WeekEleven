@@ -5,7 +5,6 @@ public class Account {
 
     public Account(String[] values) {
         this.values = values;
-
     }
 
     public String[] getValues() {

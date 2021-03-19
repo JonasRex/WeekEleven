@@ -39,7 +39,7 @@ public class Dog {
 
     public void setOffSpring(String name) {
         for (int i = 0; i < offSpring.length; i++) {
-            if (offSpring[i].getName() == "FREE") {
+            if (offSpring[i].getName().equals("FREE")) {
                 offSpring[i].setName(name);
                 break;
             }

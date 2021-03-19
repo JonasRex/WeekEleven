@@ -8,5 +8,4 @@ public class VAT {
         double VAT = number / 100 * PRCVAT;
         return VAT;
     }
-
 }

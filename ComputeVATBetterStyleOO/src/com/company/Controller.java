@@ -12,8 +12,4 @@ public class Controller {
         double moms = VAT.doVAT(userIn);
         View.doView(moms,MSG);
     }
-
-
-
-
 }

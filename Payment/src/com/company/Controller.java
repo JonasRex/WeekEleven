@@ -41,7 +41,6 @@ public class Controller {
             System.out.println(a.getSpecificValue(index));
 
         }
-
     }
 
 
@@ -61,7 +60,6 @@ public class Controller {
         int sum = 0;
         for (int i = 0; i < ints.length; i++) {
             sum += ints[i];
-
         }
 
         if (sum % 10 == 0) {
@@ -71,8 +69,14 @@ public class Controller {
         } else {
             System.out.println(str + " is an invalid credit card number.");
             return false;
-
         }
     }
 
+    public ArrayList<Account> getAccounts() {
+        return accounts;
+    }
+
+    public String getCreditCardNumb(int index) {
+         return accounts.get(index).getSpecificValue(4);
+    }
 }

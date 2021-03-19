@@ -8,8 +8,9 @@ public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller();
         controller.printData(5);
-//        controller.checkCardNumber(4545107322));
 
-
+        for (int i = 0; i < 4; i++) {
+            controller.checkCardNumber(controller.getCreditCardNumb(i));
+        }
     }
 }
