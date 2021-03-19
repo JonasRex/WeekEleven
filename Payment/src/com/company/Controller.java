@@ -14,7 +14,6 @@ public class Controller {
         checkCardNumber(accounts.get(2).getSpecificValue(4));
     }
 
-
     public void loadData() {
         String path = "src/com/company/data.txt";
         String line = "";
@@ -58,8 +57,8 @@ public class Controller {
             ints[i] = j;
         }
         int sum = 0;
-        for (int i = 0; i < ints.length; i++) {
-            sum += ints[i];
+        for (int anInt : ints) {
+            sum += anInt;
         }
 
         if (sum % 10 == 0) {
